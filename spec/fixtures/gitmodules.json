@@ -1,0 +1,22 @@
+[
+  {
+    "name": "src/collector",
+    "path": "src/collector",
+    "url": "https://github.com/cloudfoundry/collector.git"
+  },
+  {
+    "name": "src/loggregator",
+    "path": "src/loggregator",
+    "url": "https://github.com/cloudfoundry/loggregator-release"
+  },
+  {
+    "name": "src/smoke-tests",
+    "path": "src/smoke-tests",
+    "url": "https://github.com/cloudfoundry/cf-smoke-tests"
+  },
+  {
+    "name": "src/etcd-release",
+    "path": "src/etcd-release",
+    "url": "https://github.com/cloudfoundry-incubator/etcd-release.git"
+  }
+]
