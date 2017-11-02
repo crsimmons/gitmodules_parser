@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'json'
+require 'strscan'
 
 module Parsers
   # GitmodulesParser parses gitmodule files into JSON
@@ -11,7 +12,7 @@ module Parsers
 
     def parse
       begin
-        file_contents = File.read(gitmodules)
+        file_contents = File.read(gitmodules).strip
       rescue
         return '{}'
       end

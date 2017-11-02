@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+# frozen_string_literal: true
+
+require_relative 'lib/gitmodules_parser.rb'
+
+if ARGV.size != 1
+  puts 'Correct usage is `parse /path/to/.gitmodules`' unless ARGV.size == 1
+  return
+end
+
+GITMODULE_FILE = ARGV[0]
+
+parser = Parsers::GitmodulesParser.new(GITMODULE_FILE)
+
+puts parser.parse
